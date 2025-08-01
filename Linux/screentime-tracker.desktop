@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Screen Time Tracker
+Comment=Track and analyze your screen time
+Exec=/usr/local/bin/screentime-tracker
+Icon=applications-monitoring
+Terminal=true
+Type=Application
+Categories=Utility;System;Monitor;
+Keywords=screen;time;tracker;productivity;monitor;statistics;

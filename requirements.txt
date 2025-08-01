@@ -1,0 +1,6 @@
+pandas
+psutil
+pywin32
+comtypes
+python-dateutil
+argparse
