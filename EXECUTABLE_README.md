@@ -1,143 +1,219 @@
-# Screen Time Tracker - Executable Distribution
+# Screen Time Tracker - Standalone Executable
 
-## 🎯 Single Executable Solution
-
-Your Screen Time Tracker has been successfully compiled into a single executable file that requires **no Python installation**!
-
-## 📁 Files
-
-- **`dist/ScreenTimeTracker.exe`** - Main executable (standalone)
-- **`RunScreenTime.bat`** - Convenient launcher for PowerShell
-- **`ScreenTime.bat`** - Legacy launcher (for development)
+A completely standalone Windows executable for tracking and analyzing your screen time. **No Python installation required!**
 
 ## 🚀 Quick Start
 
-### Option 1: Direct Executable
+Simply download `ScreenTimeTracker.exe` and run it from anywhere on your Windows system.
+
+### Basic Usage
+
 ```cmd
-# Navigate to the dist folder and run directly
-cd dist
+# Show help
 ScreenTimeTracker.exe --help
-ScreenTimeTracker.exe --today
+
+# Start tracking in background
 ScreenTimeTracker.exe --start
+
+# Check if tracking is running
+ScreenTimeTracker.exe --status
+
+# View today's summary
+ScreenTimeTracker.exe --today
+
+# Stop tracking
+ScreenTimeTracker.exe --stop
 ```
 
-### Option 2: Using Launcher (Recommended)
+### Interactive Mode
+
 ```cmd
-# Use the convenient launcher from the main folder
-.\RunScreenTime.bat --help
-.\RunScreenTime.bat --today
-.\RunScreenTime.bat --start
+# Run without arguments for interactive menu
+ScreenTimeTracker.exe
 ```
 
-## 📊 Available Commands
+## 📊 Features
 
-```cmd
-# Quick statistics
-.\RunScreenTime.bat --today        # Today's summary
-.\RunScreenTime.bat --week         # Weekly report
-.\RunScreenTime.bat --apps         # App usage statistics
-.\RunScreenTime.bat --status       # Check if tracking is active
+### Activity Tracking
+- **Real-time monitoring** of active applications and windows
+- **Idle time detection** when you're away from your computer
+- **Screen lock detection** for accurate activity logging
+- **Background operation** with minimal system impact
 
-# Tracking control
-.\RunScreenTime.bat --start        # Start background tracking
-.\RunScreenTime.bat --stop         # Stop tracking
-.\RunScreenTime.bat --track        # Start tracker (blocking mode)
+### Reports & Statistics
+- **Today's Summary**: Current day activity breakdown
+- **Weekly Reports**: 7-day activity analysis
+- **App Usage Statistics**: Time spent per application
+- **Productivity Analysis**: Categorized app usage
 
-# Interactive menu
-.\RunScreenTime.bat                # Open full interactive menu
+### Data Management
+- **CSV data storage** in the same folder as the executable
+- **UTF-8 encoding** for international character support
+- **Privacy-focused**: All data stays on your computer
+
+## 🎯 Commands
+
+| Command | Description |
+|---------|-------------|
+| `--help` | Show all available options |
+| `--start` | Start background tracking |
+| `--stop` | Stop background tracking |
+| `--status` | Check if tracking is running |
+| `--today` | Show today's activity summary |
+| `--week` | Show weekly activity report |
+| `--apps` | Show application usage statistics |
+| `--track` | Start tracking in foreground (for testing) |
+
+## 📁 File Structure
+
+When you run the executable, it creates these files in the same directory:
+
+```
+ScreenTimeTracker.exe       # The main executable
+screentime_data.csv         # Your activity data
+screentime.lock             # Lock file (when tracking is active)
 ```
 
-## 📦 Deployment
+## 🔧 Installation & Setup
 
-### Single File Distribution
-The `ScreenTimeTracker.exe` file is completely self-contained:
-- ✅ No Python installation required
-- ✅ No dependencies to install
-- ✅ All libraries bundled inside
-- ✅ Works on any Windows 10/11 system
+### No Installation Required!
+1. Download `ScreenTimeTracker.exe`
+2. Place it in any folder you prefer
+3. Run it from Command Prompt or PowerShell
 
-### Distribution Package
-To share with others, provide:
-1. `dist/ScreenTimeTracker.exe` (main file)
-2. `RunScreenTime.bat` (optional launcher)
-3. This README file
+### Optional: Add to System PATH
+To run from anywhere:
+1. Place `ScreenTimeTracker.exe` in a folder like `C:\Tools\`
+2. Add that folder to your Windows PATH environment variable
+3. Now you can run `ScreenTimeTracker --today` from any directory
 
-## 🔧 Features
+### Optional: Auto-Start with Windows
+To automatically start tracking when you log in:
+1. Press `Win + R`, type `shell:startup`, press Enter
+2. Create a shortcut to `ScreenTimeTracker.exe --start`
+3. Tracking will start automatically on login
 
-All original features are included in the executable:
-- ✅ Background activity tracking
-- ✅ Today's activity summary
-- ✅ Weekly reports with daily breakdown
-- ✅ Detailed app usage statistics
-- ✅ Productivity analysis
-- ✅ Custom date range analysis
-- ✅ Data export functionality
-- ✅ Settings management
-- ✅ Windows startup integration
-
-## 📈 Usage Examples
+## 💡 Usage Examples
 
 ### Daily Workflow
 ```cmd
 # Morning: Start tracking
-.\RunScreenTime.bat --start
+ScreenTimeTracker.exe --start
 
-# Throughout day: Check status
-.\RunScreenTime.bat --status
+# During day: Check status occasionally
+ScreenTimeTracker.exe --status
 
 # Evening: View summary
-.\RunScreenTime.bat --today
+ScreenTimeTracker.exe --today
+
+# Weekend: Check weekly stats
+ScreenTimeTracker.exe --week
 ```
 
-### Weekly Analysis
+### First Time Setup
 ```cmd
-# Check weekly patterns
-.\RunScreenTime.bat --week
+# 1. Test the executable
+ScreenTimeTracker.exe --help
 
-# Detailed app usage
-.\RunScreenTime.bat --apps
+# 2. Start tracking for the first time
+ScreenTimeTracker.exe --start
 
-# Full interactive analysis
-.\RunScreenTime.bat
-# Then use menu options 7-8 for productivity analysis
+# 3. Let it run for a while, then check
+ScreenTimeTracker.exe --status
+
+# 4. View your first report
+ScreenTimeTracker.exe --today
 ```
 
-## 💾 Data Storage
+## 📈 Data Analysis
 
-The executable uses the same data location as the original:
-- **Location**: `%LOCALAPPDATA%\ScreenTime\activity_log.csv`
-- **Format**: CSV with timestamp, idle time, app name, window title
-- **Privacy**: All data stays on your local machine
+### CSV Data Format
+Your activity data is stored in `screentime_data.csv` with these columns:
+- `timestamp`: When the activity was recorded
+- `idle_seconds`: How long you were idle
+- `app_name`: Name of the active application
+- `window_title`: Title of the active window
 
-## 🎯 Advantages of Executable Version
+### Example Data
+```csv
+timestamp,idle_seconds,app_name,window_title
+2024-01-15 09:30:00,0,chrome.exe,GitHub - Google Chrome
+2024-01-15 09:30:05,0,notepad.exe,Document.txt - Notepad
+2024-01-15 09:30:10,300,chrome.exe,GitHub - Google Chrome
+```
 
-1. **Portability**: Run on any Windows system without Python
-2. **Simplicity**: Single file distribution
-3. **Performance**: Optimized startup time
-4. **Deployment**: Easy to share with team/organization
-5. **Reliability**: No dependency conflicts
-
-## 🔍 File Sizes
-
-- **Executable**: ~50-70 MB (includes Python runtime + all libraries)
-- **Data files**: Minimal (CSV logs grow over time)
-
-## ⚙️ Technical Details
-
-- **Built with**: PyInstaller
-- **Target**: Windows x64
-- **Dependencies**: All bundled (pandas, psutil, pywin32, etc.)
-- **Console Application**: For maximum compatibility
+### Opening in Excel
+You can open `screentime_data.csv` directly in Microsoft Excel or Google Sheets for custom analysis.
 
 ## 🛠️ Troubleshooting
 
-1. **Antivirus warnings**: Some antivirus may flag new executables - add exception if needed
-2. **Permission errors**: Run as administrator for startup integration features
-3. **Data location**: Use `--help` to see all available commands
+### Common Issues
 
-## 📝 Notes
+**"The executable doesn't start"**
+- Make sure you're running on Windows 7 or later
+- Try running as Administrator if needed
+- Check Windows Defender hasn't quarantined the file
 
-- The executable is larger than the Python scripts but completely standalone
-- First run may be slightly slower as Windows loads the executable
-- All original functionality is preserved
-- Data format remains compatible with the Python version
+**"No data is being recorded"**
+- Make sure tracking is started: `ScreenTimeTracker.exe --start`
+- Check status: `ScreenTimeTracker.exe --status`
+- Wait a few minutes, then check: `ScreenTimeTracker.exe --today`
+
+**"Status shows 'NOT ACTIVE' but I started tracking"**
+- The background process might have stopped
+- Restart tracking: `ScreenTimeTracker.exe --start`
+- Check if antivirus software is blocking the process
+
+**"Permission denied errors"**
+- Run Command Prompt as Administrator
+- Make sure the executable has write permissions in its folder
+
+### Getting Help
+
+**Check if it's working:**
+```cmd
+ScreenTimeTracker.exe --status
+```
+
+**View recent activity:**
+```cmd
+ScreenTimeTracker.exe --today
+```
+
+**Reset everything:**
+1. Stop tracking: `ScreenTimeTracker.exe --stop`
+2. Delete `screentime_data.csv` and `screentime.lock`
+3. Start fresh: `ScreenTimeTracker.exe --start`
+
+## 🔒 Privacy & Security
+
+- **Local Data Only**: No internet connection required or used
+- **Your Computer**: All data stays on your machine
+- **No Keylogging**: Only tracks window titles and app names
+- **User Control**: You can start/stop tracking anytime
+- **Open Data**: CSV format you can read and analyze yourself
+
+## 📋 System Requirements
+
+- **Windows 7** or later (Windows 10/11 recommended)
+- **64-bit Windows** (most modern systems)
+- **~100MB disk space** for the executable and data
+- **Minimal RAM/CPU usage** when running in background
+
+## 🎁 What's Included
+
+This standalone executable includes:
+- Complete activity tracking engine
+- Statistical analysis capabilities
+- Command-line interface
+- Data export functionality
+- All necessary dependencies bundled in
+
+**No Python, no additional software, no complex setup required!**
+
+---
+
+**File Size**: ~100MB (includes all dependencies)  
+**Platform**: Windows 7/8/10/11 (64-bit)  
+**License**: Free for personal use  
+**Version**: Standalone 2.0

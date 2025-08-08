@@ -13,6 +13,20 @@ import time
 current_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, current_dir)
 
+def check_running_processes():
+    """Check if tracker is running using tasklist"""
+    try:
+        if sys.platform == 'win32':
+            # Check for both python and exe processes
+            result = subprocess.run(['tasklist'], capture_output=True, text=True, shell=True)
+            if result.returncode == 0:
+                output = result.stdout.lower()
+                return ('screentime' in output or 
+                       'python' in output and 'screentime_tracker' in output)
+        return False
+    except:
+        return False
+
 def main():
     parser = argparse.ArgumentParser(description='Screen Time Tracker - All-in-One')
     parser.add_argument('--track', action='store_true', help='Start background tracking')
@@ -42,6 +56,14 @@ def main():
         print("\nStarting CLI interface...")
         time.sleep(2)
         args.cli = True
+    
+    # Handle simple status check without importing CLI
+    if args.status:
+        if check_running_processes():
+            print("[+] Tracking is ACTIVE")
+        else:
+            print("[-] Tracking is NOT ACTIVE")
+        return
     
     if args.track:
         # Start tracker in background

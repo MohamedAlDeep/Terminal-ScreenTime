@@ -1,0 +1,99 @@
+timestamp,idle_seconds,app_name,window_title
+2025-08-08 17:42:15,18,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:42:30,33,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:43:00,63,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:43:30,23,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:44:00,4,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:44:30,34,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:45:00,0,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:45:30,18,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:46:00,48,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:46:30,13,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:47:00,0,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:47:30,5,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:48:00,35,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:48:30,65,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:49:00,95,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:49:30,125,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:50:00,155,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:50:30,18,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:51:00,0,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:51:30,30,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:52:00,60,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:52:30,90,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 17:53:00,120,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 21:39:16,7,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 21:43:02,0,zen.exe,Windows Downloads | KiCad — Zen Browser
+2025-08-08 21:43:07,0,ShellExperienceHost.exe,Quick settings
+2025-08-08 21:43:12,0,zen.exe,Windows Downloads | KiCad — Zen Browser
+2025-08-08 21:44:02,0,explorer.exe,E:\ISEF\2026\IC - File Explorer
+2025-08-08 21:44:07,0,explorer.exe,Downloads and 1 more tab - File Explorer
+2025-08-08 21:44:17,0,zen.exe,Windows Downloads | KiCad — Zen Browser
+2025-08-08 21:44:37,0,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 21:49:12,0,zen.exe,Windows Downloads | KiCad — Zen Browser
+2025-08-08 21:49:37,0,zen.exe,ADS1298 vs ADS1299: Key Differences Explained - DeepSeek — Zen Browser
+2025-08-08 21:49:42,0,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 21:51:07,0,zen.exe,ADS1298 vs ADS1299: Key Differences Explained - DeepSeek — Zen Browser
+2025-08-08 21:51:12,0,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 21:51:22,0,zen.exe,ADS1298 vs ADS1299: Key Differences Explained - DeepSeek — Zen Browser
+2025-08-08 21:51:32,0,explorer.exe,Downloads and 1 more tab - File Explorer
+2025-08-08 21:51:47,0,zen.exe,ADS1298 vs ADS1299: Key Differences Explained - DeepSeek — Zen Browser
+2025-08-08 21:51:52,0,zen.exe,Windows Downloads | KiCad — Zen Browser
+2025-08-08 21:53:12,0,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 21:53:17,0,zen.exe,Windows Downloads | KiCad — Zen Browser
+2025-08-08 21:58:57,0,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 21:59:02,0,explorer.exe,Downloads and 1 more tab - File Explorer
+2025-08-08 21:59:07,0,chrome.exe,New Tab - Google Chrome
+2025-08-08 21:59:17,0,chrome.exe,KiCad - Schematic Capture & PCB Design Software - Google Chrome
+2025-08-08 21:59:22,4,chrome.exe,Download | KiCad - Google Chrome
+2025-08-08 21:59:42,0,chrome.exe,Windows Downloads | KiCad - Google Chrome
+2025-08-08 21:59:57,0,chrome.exe,Recent download history
+2025-08-08 22:00:02,0,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 22:00:07,3,chrome.exe,Windows Downloads | KiCad - Google Chrome
+2025-08-08 22:00:17,0,chrome.exe,Recent download history
+2025-08-08 22:05:12,0,ShellExperienceHost.exe,Quick settings
+2025-08-08 22:05:17,0,chrome.exe,Recent download history
+2025-08-08 22:05:42,0,ShellExperienceHost.exe,Quick settings
+2025-08-08 22:05:52,0,chrome.exe,Recent download history
+2025-08-08 22:06:02,0,chrome.exe,Download history - Google Chrome
+2025-08-08 22:06:32,0,chrome.exe,Recent download history
+2025-08-08 22:06:42,0,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
+2025-08-08 22:06:47,0,explorer.exe,Downloads and 1 more tab - File Explorer
+2025-08-08 22:06:52,0,chrome.exe,Recent download history
+2025-08-08 22:07:07,0,chrome.exe,New Tab - Google Chrome
+2025-08-08 22:07:12,0,chrome.exe,Summer of Making - Google Chrome
+2025-08-08 22:07:17,0,chrome.exe,Recent download history
+2025-08-08 22:07:32,0,chrome.exe,Windows Downloads | KiCad - Google Chrome
+2025-08-08 22:07:42,0,chrome.exe,Recent download history
+2025-08-08 22:08:12,0,chrome.exe,Windows Downloads | KiCad - Google Chrome
+2025-08-08 22:08:22,1,chrome.exe,Recent download history
+2025-08-08 22:08:27,0,explorer.exe,Downloads and 1 more tab - File Explorer
+2025-08-08 22:08:32,1,chrome.exe,Recent download history
+2025-08-08 22:09:22,0,explorer.exe,System tray overflow window.
+2025-08-08 22:09:27,3,chrome.exe,Recent download history
+2025-08-08 22:15:17,1,explorer.exe,Window Dialog
+2025-08-08 22:15:47,31,dwm.exe,Window Dialog (Not Responding)
+2025-08-08 22:16:02,46,kicad-9.0.3-x86_64.exe,verifying installer: 34%
+2025-08-08 22:16:07,0,kicad-9.0.3-x86_64.exe,KiCad 9.0.3 Setup
+2025-08-08 22:16:12,1,kicad-9.0.3-x86_64.exe,
+2025-08-08 22:16:27,0,kicad-9.0.3-x86_64.exe,KiCad 9.0.3 Setup 
+2025-08-08 22:16:32,0,kicad-9.0.3-x86_64.exe,Browse For Folder
+2025-08-08 22:16:47,0,kicad-9.0.3-x86_64.exe,KiCad 9.0.3 Setup 
+2025-08-08 22:16:52,0,kicad-9.0.3-x86_64.exe,Browse For Folder
+2025-08-08 22:17:07,0,kicad-9.0.3-x86_64.exe,KiCad 9.0.3 Setup 
+2025-08-08 22:22:04,1,explorer.exe,Downloads and 1 more tab - File Explorer
+2025-08-08 22:23:29,0,explorer.exe,
+2025-08-08 22:23:34,0,kicad.exe,Check for Updates
+2025-08-08 22:23:44,0,kicad.exe,KiCad 9.0
+2025-08-08 22:24:59,0,kicad.exe,Create New Project
+2025-08-08 22:25:04,0,ShellExperienceHost.exe,Quick settings
+2025-08-08 22:25:19,0,kicad.exe,Configure Global Symbol Library Table
+2025-08-08 22:25:29,0,kicad.exe,Configure Global Footprint Library Table
+2025-08-08 22:25:34,0,kicad.exe,Preferences
+2025-08-08 22:26:34,0,kicad.exe,KiCad 9.0
+2025-08-08 22:26:39,0,kicad.exe,Create New Project
+2025-08-08 22:26:59,0,kicad.exe,Eeschema
+2025-08-08 22:27:04,0,kicad.exe,PCB_Design — Schematic Editor
+2025-08-08 22:27:09,0,kicad.exe,Loading Symbol Libraries
+2025-08-08 22:27:19,7,kicad.exe,Loading Footprint Libraries
+2025-08-08 22:27:39,0,Code.exe,screentime_cli.py - Terminal ScreenTime - Visual Studio Code
